@@ -12,6 +12,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.hide{
+    display: none;
+}
+
 /*************************** Main-Container ***********************************/
 .main-container {
     align-items: center;
@@ -97,6 +101,10 @@ body {
     left: 16px;
 }
 
+.click1.active{
+    background-color: #fd0b0b;
+}
+
 .section-1-d2 {
     top: 20px;
     font-size: 13px;
@@ -109,7 +117,6 @@ body {
 
 .d2 {
     margin-top: 25px;
-
 }
 
 .d3 {
@@ -124,6 +131,7 @@ body {
 
 /************************** Section 02 ********************************/
 .section-2 {
+    /* z-index: 100; */
     width: 420px;
     height: 470px;
     flex-wrap: wrap;
@@ -149,23 +157,12 @@ body {
     margin-top: 10px;
 }
 
-.btn5 {
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    padding: 12px;
-    width: 110px;
-    color: #ffffff;
-    border-radius: 10px;
-    border: none;
-    display: flex;
-}
+
 
 /************************** Display Hide ******************************/
-.hide {
+/* .hide {
     display: none !important;
-}
+} */
 /************************** Section 03******************************/
 
 .sec3-div2 {
@@ -279,14 +276,23 @@ input:checked+.slider:before {
 }
 
 .last-buttons {
-    display: flex;
-    margin-left: 100;
-    align-items: center;
-    gap: 165px;
-    margin-top: 60px;
+    position: absolute;
+    left: 850px;
+    top: 560px;
 }
-
+.btn5 {
+    left: 0px;
+    position: absolute;
+    background-color: blue;
+    padding: 12px;
+    width: 110px;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+}
 .btn6 {
+    position: absolute;
+    right: 150px;
     color: black;
     border: none;
     width: 80px;

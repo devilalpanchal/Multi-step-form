@@ -43,10 +43,10 @@ if(count===4){
    decrement2.classList.add('btn6')
 }
 
-
 if(count===0 ){
     btn1.style.color = "black"
    btn1.style.backgroundColor = "white"
+
 }else{
    
   
@@ -55,6 +55,8 @@ if(count===0 ){
 }
 
 if(count===1 ){
+   decrement2.classList.remove('hide')
+
    btn2.style.color = "black"
    btn2.style.backgroundColor = "white"
 }else{

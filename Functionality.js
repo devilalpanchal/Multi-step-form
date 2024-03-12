@@ -11,7 +11,6 @@ const btn3 = document.querySelector('.btn3')
 const btn4 = document.querySelector('.btn4')
 let appendContaine=document.querySelector('.appendContainer')
 let count=0
-// let array=['hello','my','name','is']
 
 appendContaine.innerHTML=array[count]
 
@@ -21,7 +20,6 @@ increment1.addEventListener('click',()=>{
    if(count>=array.length){
       count=array.length
    }else{
-   console.log(count);
    appendContaine.innerHTML=array[count]
 
 }
@@ -83,9 +81,6 @@ if(count===3 ){
 
 }
 
-
-
-
 });
 
 decrement2.addEventListener('click',()=>{
@@ -93,7 +88,6 @@ decrement2.addEventListener('click',()=>{
    if(count<=0){
       count=0
    }else{
-   console.log(count);
    appendContaine.innerHTML=array[count]
 }
 })

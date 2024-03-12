@@ -5,25 +5,96 @@ const section3 = document.querySelector('.section-3')
 const section4 = document.querySelector('.section-4')
 const section5 = document.querySelector('.section-5')
 const section6 = document.querySelector('.section-6')
+const btn1 = document.querySelector('.btn1')
+const btn2 = document.querySelector('.btn2')
+const btn3 = document.querySelector('.btn3')
+const btn4 = document.querySelector('.btn4')
+let appendContaine=document.querySelector('.appendContainer')
+let count=0
+// let array=['hello','my','name','is']
 
+appendContaine.innerHTML=array[count]
 
 increment1.addEventListener('click',()=>{
-section2.classList.add('hide')
-console.log(section2);
-section3.classList.remove('hide')
-console.log(section3);
+   count++
+
+   if(count>=array.length){
+      count=array.length
+   }else{
+   console.log(count);
+   appendContaine.innerHTML=array[count]
+
+}
+
+// in four section add confirm btn
+if(count===3){
+   increment1.innerText='confirm'
+}else{
+   increment1.innerText='Next step' 
+}
+
+// for last section hide increment and decremetn hide
+if(count===4){
+   increment1.classList.add('hide')
+   decrement2.classList.add('hide')
+
+}else{
+   increment1.classList.add('btn5')
+   decrement2.classList.add('btn6')
+}
+
+
+if(count===0 && count<=0){
+    btn1.style.color = "black"
+   btn1.style.backgroundColor = "white"
+}else{
+   
+  
+   btn1.style.backgroundColor = "#1100fff1"
+   btn1.style.color = "white"
+}
+
+if(count===1 && count<=1){
+   btn2.style.color = "black"
+   btn2.style.backgroundColor = "white"
+}else{
+   btn2.style.backgroundColor = "#1100fff1"
+   btn2.style.color = "white"
+
+}
+
+if(count===2 && count<=2){
+   btn3.style.color = "black"
+   btn3.style.backgroundColor = "white"
+}else{
+   btn3.style.backgroundColor = "#1100fff1"
+   btn3.style.color = "white"
+
+}
+
+if(count===3 && count<=3){
+   btn4.style.color = "black"
+   btn4.style.backgroundColor = "white"
+}else{
+   btn4.style.backgroundColor = "#1100fff1"
+   btn4.style.color = "white"
+
+}
+
+
+
 
 });
 
 decrement2.addEventListener('click',()=>{
-   section3.classList.add('hide')
-// console.log(section3);
-
-   section2.classList.remove('hide')
-// console.log(section2);
-
+   count--
+   if(count<=0){
+      count=0
+   }else{
+   console.log(count);
+   appendContaine.innerHTML=array[count]
+}
 })
-
 
 
 

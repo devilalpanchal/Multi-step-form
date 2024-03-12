@@ -42,9 +42,9 @@ body {
 }
 
 .btn1 {
-    background-color: #1100fff1;
+    background-color:white;
     border: 2px rgb(255, 255, 255) solid;
-    color: #ffffff;
+    color: black;
     padding: 2px;
     border-radius: 50%;
     position: absolute;
@@ -101,9 +101,9 @@ body {
     left: 16px;
 }
 
-.click1.active{
+/* .click1.active{
     background-color: #fd0b0b;
-}
+} */
 
 .section-1-d2 {
     top: 20px;
@@ -131,7 +131,7 @@ body {
 
 /************************** Section 02 ********************************/
 .section-2 {
-    /* z-index: 100; */
+    margin-top: 50px;
     width: 420px;
     height: 470px;
     flex-wrap: wrap;
@@ -145,11 +145,11 @@ body {
 }
 
 .sec2-div1 {
-    margin-top: 33px;
+    margin-top: 13px;
 }
 
 .sec2-div2 {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .sec2-div1 p {
@@ -166,14 +166,14 @@ body {
 /************************** Section 03******************************/
 
 .sec3-div2 {
-    margin-top: 35px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
 .section3-start {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .image2:hover {
@@ -281,7 +281,7 @@ input:checked+.slider:before {
     top: 560px;
 }
 .btn5 {
-    left: 0px;
+    left: 50px;
     position: absolute;
     background-color: blue;
     padding: 12px;
@@ -291,12 +291,15 @@ input:checked+.slider:before {
     border: none;
 }
 .btn6 {
+    border: 1px solid blue;
     position: absolute;
-    right: 150px;
+    padding: 10px;
+    right: 135px;
     color: black;
-    border: none;
-    width: 80px;
+    /* border: none; */
+    width: 100px;
     background-color: white;
+    border-radius: 10px;
 }
 
 .sec3-div3 .toggle.active {
@@ -306,11 +309,11 @@ input:checked+.slider:before {
 /********************************* Section 04 ************************************/
 
 .sec4-div2 {
-    margin-top: 35px;
+    margin-top: 10px;
 }
 
 .sec4-div1 {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .sec4-1 {

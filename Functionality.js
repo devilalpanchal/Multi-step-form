@@ -28,7 +28,9 @@ increment1.addEventListener('click',()=>{
 
 // in four section add confirm btn
 if(count===3){
-   increment1.innerText='confirm'
+   increment1.innerText='Confirm'
+   increment1.style.backgroundColor = 'rgb(94, 94, 231)'
+
 }else{
    increment1.innerText='Next step' 
 }
@@ -44,7 +46,7 @@ if(count===4){
 }
 
 
-if(count===0 && count<=0){
+if(count===0 ){
     btn1.style.color = "black"
    btn1.style.backgroundColor = "white"
 }else{
@@ -54,7 +56,7 @@ if(count===0 && count<=0){
    btn1.style.color = "white"
 }
 
-if(count===1 && count<=1){
+if(count===1 ){
    btn2.style.color = "black"
    btn2.style.backgroundColor = "white"
 }else{
@@ -63,7 +65,7 @@ if(count===1 && count<=1){
 
 }
 
-if(count===2 && count<=2){
+if(count===2 ){
    btn3.style.color = "black"
    btn3.style.backgroundColor = "white"
 }else{
@@ -72,7 +74,7 @@ if(count===2 && count<=2){
 
 }
 
-if(count===3 && count<=3){
+if(count===3 ){
    btn4.style.color = "black"
    btn4.style.backgroundColor = "white"
 }else{
